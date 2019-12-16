@@ -1,0 +1,52 @@
+NEWTON SECOND LAW{
+
+    STORE "mass" with 600
+    STORE "acceleration" with 2
+    STORE "force" with any value
+
+    CALCULATE "mass" times "acceleration"
+    SET "force" value with calculation result
+
+    DISPLAY "force"
+
+}
+
+TAHUN KABISAT{
+    STORE "year" with any value
+    
+    IF (year%4 === 0 && year%100 != 0){
+        DISPLAY "Tahun " + year + "tahun kabisat!"
+    }
+    ELSE IF (year%4 === 0 && year%100 === 0 && year%400 === 0){
+        DISPLAY "Tahun " + year + "tahun kabisat!"
+    }
+    ELSE{
+        "Tahun " + year + "bukan tahun kabisat!"
+    }
+}
+
+LAUNDRY DAY{
+    STORE "laundry" to 0
+   
+    While laundry < 20{
+        DISPLAY "More laundry? (max 20)"
+        laundry ++
+    }
+
+    DISPLAY "Start Machine!"
+}
+
+Periksa Kuku{
+    STORE "student" with 0
+    STORE "condition" with TRUE
+
+    While (student < 40){
+        IF (condition === TRUE){
+            DISPLAY "Bagus kuku kamu rapi"
+        }
+        ELSE{
+            DISPLAY "Kamu saya hukum"
+        }
+    student ++
+    }
+}
